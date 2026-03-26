@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+html {
+  color-scheme: dark;
+  background-color: #0f0d0b;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Geist", Arial, Helvetica, sans-serif;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, code {
+  overflow-wrap: anywhere;
+  font-family: "Geist Mono", "Courier New", Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: pretty;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+pre, pre *, code {
+  font-family: "Geist Mono", "Courier New", Courier, monospace;
+  line-height: 1.4;
+}
+
+pre {
+  border: 1px solid #353535;
+  overflow-y: hidden;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}

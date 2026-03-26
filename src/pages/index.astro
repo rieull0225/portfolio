@@ -1,0 +1,772 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="박민준 | Flutter Developer" description="5년차 Flutter 개발자 박민준의 포트폴리오입니다.">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <header class="hero">
+      <h1 class="hero-title">
+        <span class="text-glow">박민준</span>
+        <span class="hero-subtitle">— 5년차 Flutter Developer</span>
+      </h1>
+      <p class="hero-description">
+        웨어러블 BLE, 전기차 충전, 의료 AI 등 다양한 도메인에서 Flutter 앱을 기획부터 배포·운영까지 경험한 개발자입니다.<br>
+        BLE·카메라 등 네이티브 기능 연동, 실시간 데이터 스트리밍, 다양한 써드파티 SDK 통합에 강점이 있으며,<br>
+        서비스 상황에 맞춰 빠르게 기술을 선택하고 적용하는 유연한 문제 해결을 지향합니다.
+      </p>
+    </header>
+
+    <div class="columns">
+      <Card>
+        <h3 class="card-title">Contact</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <a href="mailto:rieull0225@gmail.com">rieull0225@gmail.com</a>
+          </li>
+          <li>
+            <span class="label">GitHub</span>
+            <a href="https://github.com/rieull0225" target="_blank">github.com/rieull0225</a>
+          </li>
+        </ul>
+      </Card>
+
+      <Card>
+        <h3 class="card-title">Keywords</h3>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">BLE</span>
+          <span class="tag">Riverpod</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">Sentry</span>
+          <span class="tag">Shorebird</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">AI-Assisted Dev</span>
+        </div>
+      </Card>
+    </div>
+
+    <div class="subsection">
+      <h2 class="section-title">Tech Stack</h2>
+      <Card>
+        <div class="table-container">
+          <table>
+            <tbody>
+              <tr>
+                <th>Mobile</th>
+                <td>Flutter 3.x / Dart 3.x, Riverpod (code-gen), GoRouter, Freezed, Hive, BLoC, GetX</td>
+              </tr>
+              <tr>
+                <th>Native / IoT</th>
+                <td>BLE (Flutter Blue Plus), 카메라 촬영·녹화, QR 스캔, NFC, 웨어러블 디바이스 실시간 연동</td>
+              </tr>
+              <tr>
+                <th>Networking</th>
+                <td>Dio + Custom Interceptor (Auth Retry, Sentry), RESTful API, WebSocket, 실시간 데이터 스트림</td>
+              </tr>
+              <tr>
+                <th>CI/CD / DevOps</th>
+                <td>GitHub Actions, Fastlane, Shorebird OTA, Firebase App Distribution</td>
+              </tr>
+              <tr>
+                <th>Monitoring</th>
+                <td>Sentry, Firebase Crashlytics, 에러 필터링·자동 리포팅 파이프라인 구축</td>
+              </tr>
+              <tr>
+                <th>3rd-party SDK</th>
+                <td>Bootpay, 카카오페이, Firebase Auth/FCM, Google Maps, Naver Maps, Google Ads, 채널톡</td>
+              </tr>
+              <tr>
+                <th>Backend (Sub)</th>
+                <td>Spring Boot, Node.js, MySQL, AWS EC2, Firebase Functions</td>
+              </tr>
+              <tr>
+                <th>AI / Productivity</th>
+                <td>Claude Code, Cursor 기반 AI 페어 프로그래밍, Sentry AI 분석, LLM API 활용</td>
+              </tr>
+              <tr>
+                <th>Collaboration</th>
+                <td>Git, Linear, Slack, Jira, Figma, Notion</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Card>
+    </div>
+
+    <div class="subsection">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-cards">
+        <Card class="about-card">
+          <div class="about-icon">🛠</div>
+          <h3>다양한 도메인에서 유연하게 적응하는 개발자</h3>
+          <p>
+            피트니스, 전기차 충전, 의료 AI 등 매번 다른 도메인과 요구사항 속에서,
+            필요한 기술을 빠르게 학습하고 서비스에 맞는 최적의 방법을 찾아 적용해왔습니다.
+            BLE 웨어러블, 카메라 촬영, 지도 SDK, 결제 PG 등 써드파티와 네이티브 기능을 가리지 않고 통합한 경험이 강점입니다.
+          </p>
+        </Card>
+        <Card class="about-card">
+          <div class="about-icon">🤖</div>
+          <h3>AI를 일상 도구로 활용하는 개발자</h3>
+          <p>
+            Claude Code, Cursor 등 AI 페어 프로그래밍 도구를 워크플로우에 통합하여
+            코드 리뷰, 에러 분석, 문서화 등 반복 작업을 자동화하고 있습니다.
+            새로운 기술에 대한 관심이 높아 Shorebird OTA, Riverpod code-gen, Sentry AI 분석 등
+            Flutter 생태계의 최신 도구를 프로덕션에 적극 도입해왔습니다.
+          </p>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER SECTION -->
+  <section id="career" class="section">
+    <h2 class="section-title-large">Career</h2>
+
+    <div class="timeline">
+      <!-- 플러그링크 -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-date">2025.05 ~ 재직 중</span>
+          <h3 class="company-name">플러그링크 PlugLink</h3>
+          <p class="company-role">Flutter Developer · 전기차 충전 서비스 스타트업</p>
+        </div>
+
+        <Card>
+          <div class="callout">
+            <span class="callout-icon">⚡</span>
+            <p>
+              전기차 충전 모바일 앱의 <strong>Flutter 단독 개발 및 운영</strong>을 담당하고 있습니다.
+              QR/BLE 기반 충전, 결제, 이용내역 관리 등 서비스 전반을 개발하며,
+              Sentry 모니터링과 Shorebird OTA 배포까지 앱의 전체 라이프사이클을 관리합니다.
+            </p>
+          </div>
+
+          <h4 class="subsection-title">주요 성과</h4>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width: 160px;">영역</th>
+                  <th>내용</th>
+                  <th style="width: 180px;">임팩트</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>앱 아키텍처 설계</strong></td>
+                  <td>Riverpod + GoRouter + Freezed 기반 클린 아키텍처. Repository 18개, ViewModel 42개, UI 38개 화면 구조 설계 및 단독 구현</td>
+                  <td>376개 파일 / <strong>84,000+ LOC</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>충전 플로우 개발</strong></td>
+                  <td>QR 스캔 → BLE PNC 연결 → 실시간 충전 모니터링 → 결제 완료까지 End-to-End 플로우</td>
+                  <td>핵심 비즈니스 로직 전담</td>
+                </tr>
+                <tr>
+                  <td><strong>BLE + 카메라 연동</strong></td>
+                  <td>BLE 충전기 스캔/연결, QR 카메라 동시 운용. 권한 경합을 순차 실행·가드 패턴으로 해결</td>
+                  <td>하드웨어 크래시 <strong>제거</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>에러 모니터링 체계</strong></td>
+                  <td>Sentry + Crashlytics 이중 모니터링. safeGuard extension으로 ViewModel 19개 일괄 방어</td>
+                  <td>에러 보고 <strong>70%+ 감소</strong></td>
+                </tr>
+                <tr>
+                  <td><strong>OTA 배포 자동화</strong></td>
+                  <td>Shorebird Code Push 도입, 릴리즈/패치 자동화 셸 스크립트 구축</td>
+                  <td>긴급 패치 <strong>수일 → 수분</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </Card>
+      </article>
+
+      <!-- 알피 -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-date">2024.03 ~ 2025.04</span>
+          <h3 class="company-name">알피 Arpi</h3>
+          <p class="company-role">Flutter Developer · 분당서울대병원 출신 의료 AI 스타트업</p>
+        </div>
+
+        <Card>
+          <div class="callout">
+            <span class="callout-icon">🏥</span>
+            <p>
+              <strong>심전도(ECG) AI 분석 플랫폼</strong>의 모바일 앱을 개발했습니다.
+              카메라로 심전도를 촬영하면 AI가 진단명을 분석해주는 서비스로,
+              <strong>식약처 SaMD 인허가 심사를 통과</strong>한 제품입니다.
+            </p>
+          </div>
+
+          <div class="achievement-list">
+            <div class="achievement-item">
+              <span class="achievement-label">카메라·이미지 처리</span>
+              <span>심전도 촬영 → 크롭·보정 → AI 서버 전송 파이프라인</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">AI 결과 시각화</span>
+              <span>진단명, 신뢰도, 파형 하이라이트 UI 구현</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">식약처 인허가</span>
+              <span>의료기기 보안 정책 적용 → <strong>SaMD 심사 통과</strong></span>
+            </div>
+          </div>
+        </Card>
+      </article>
+
+      <!-- 체인라이트닝 -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-date">2022.12 ~ 2023.10</span>
+          <h3 class="company-name">체인라이트닝 컴퍼니</h3>
+          <p class="company-role">Flutter Developer · 위치 기반 전기차 충전 플랫폼</p>
+        </div>
+
+        <Card>
+          <div class="callout">
+            <span class="callout-icon">🔋</span>
+            <p>
+              위치 기반 충전소 탐색, 커뮤니티, 커머스 기능을 제공하는 <strong>전기차 충전 플랫폼 앱</strong>을 개발했습니다.
+              <strong>CI/CD 파이프라인 구축</strong>을 담당했습니다.
+            </p>
+          </div>
+
+          <div class="achievement-list">
+            <div class="achievement-item">
+              <span class="achievement-label">CI/CD</span>
+              <span>GitHub Actions + Fastlane 기반 빌드·배포 자동화</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">지도 연동</span>
+              <span>Google Maps + Naver Maps 동시 운용, 마커 클러스터링</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">커뮤니티</span>
+              <span>게시글 CRUD, 댓글, 좋아요, 무한 스크롤</span>
+            </div>
+          </div>
+        </Card>
+      </article>
+
+      <!-- 스포투 -->
+      <article class="timeline-item">
+        <div class="timeline-header">
+          <span class="timeline-date">2022.01 ~ 2022.10</span>
+          <h3 class="company-name">스포투 Spotu</h3>
+          <p class="company-role">Flutter Developer · 웨어러블 기반 피트니스 앱 스타트업</p>
+        </div>
+
+        <Card>
+          <div class="callout">
+            <span class="callout-icon">💪</span>
+            <p>
+              웨어러블 디바이스에서 <strong>BLE로 신체 데이터를 실시간 스트리밍</strong> 받아,
+              크로스핏 WOD 수행 능력을 분석하는 피트니스 앱을 개발했습니다.
+            </p>
+          </div>
+
+          <div class="achievement-list">
+            <div class="achievement-item">
+              <span class="achievement-label">BLE 스트림</span>
+              <span>심박수·가속도·자이로 실시간 수신, 재연결 로직</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">영상 동기화</span>
+              <span>운동 영상 녹화 + 모션 데이터 타임스탬프 동기화</span>
+            </div>
+            <div class="achievement-item">
+              <span class="achievement-label">실시간 UI</span>
+              <span>심박수 그래프, 칼로리, 운동 강도 Zone — <strong>60fps</strong></span>
+            </div>
+          </div>
+        </Card>
+      </article>
+    </div>
+
+    <!-- Education -->
+    <div class="subsection">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <Card>
+          <h3 class="edu-title">Samsung Software Academy For Youth (SSAFY 6기)</h3>
+          <span class="edu-date">2021.07 ~ 2022.06</span>
+          <ul>
+            <li>삼성 주관 SW 개발자 집중 양성 과정 (1년)</li>
+            <li>알고리즘, Web Frontend/Backend, 실전 프로젝트 수료</li>
+          </ul>
+        </Card>
+
+        <Card>
+          <h3 class="edu-title">한동대학교 컴퓨터공학심화</h3>
+          <span class="edu-date">2016.03 ~ 2021.02 · 공학사</span>
+          <ul>
+            <li>보안동아리 Ghost 26기 회장</li>
+            <li>교내 창업대회 동상 수상</li>
+          </ul>
+        </Card>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <h2 class="section-title-large">Projects</h2>
+
+    <div class="projects-grid">
+      <!-- HandongApp -->
+      <Card class="project-card">
+        <div class="project-header">
+          <span class="project-icon">📱</span>
+          <div>
+            <h3 class="project-title">HandongApp</h3>
+            <p class="project-role">Frontend Lead → Project Manager</p>
+          </div>
+        </div>
+        <span class="project-date">2019.01 ~ 2020.01</span>
+
+        <p class="project-desc">
+          기존 <strong>ReactNative로 구축된 교내 앱을 Flutter로 전면 마이그레이션</strong>하는 프로젝트를 주도.
+          4명 규모 팀 운영, 코드 리뷰 프로세스 도입, GitLab CI 파이프라인 구축.
+        </p>
+
+        <div class="project-links">
+          <a href="https://gitlab.com/hgu-ghost" target="_blank" class="project-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"/>
+            </svg>
+            GitLab
+          </a>
+        </div>
+      </Card>
+
+      <!-- Team OAO -->
+      <Card class="project-card">
+        <div class="project-header">
+          <span class="project-icon">🚀</span>
+          <div>
+            <h3 class="project-title">Team OAO</h3>
+            <p class="project-role">Co-founder & Lead Developer</p>
+          </div>
+        </div>
+        <span class="project-date">2019.06 ~ 2020.11</span>
+
+        <p class="project-desc">
+          '사용자 중심 커스터마이징 플랫폼'을 기획·개발하며 <strong>창업 전 과정</strong> 경험.
+          Flutter MVP 개발 전담, 2020 SW스타트업 챌린지 참가, 투자 피칭.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Startup</span>
+        </div>
+      </Card>
+
+      <!-- Pilling -->
+      <Card class="project-card">
+        <div class="project-header">
+          <span class="project-icon">💊</span>
+          <div>
+            <h3 class="project-title">Pilling</h3>
+            <p class="project-role">졸업 프로젝트 Demo App</p>
+          </div>
+        </div>
+        <span class="project-date">2020 ~ 2021</span>
+
+        <p class="project-desc">
+          모교 디자인학부 졸업 전시용 Demo App 단독 개발.
+          BLoC, GetX, Provider 등 다양한 상태관리 패턴 비교 적용.
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/rieull0225/Pilling" target="_blank" class="project-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </Card>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 박민준. Built with Astro.</p>
+  </footer>
+</Layout>
+
+<style>
+  .section {
+    padding: 3rem 0;
+    scroll-margin-top: 2rem;
+  }
+
+  .section:first-of-type {
+    padding-top: 1rem;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  .hero-description {
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .text-glow {
+    color: var(--primary);
+    filter: drop-shadow(0 0 8px var(--primary));
+  }
+
+  .card-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--primary-light);
+  }
+
+  .card-title::before {
+    content: "# ";
+    color: var(--primary);
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .label {
+    color: var(--text-muted);
+    min-width: 60px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .subsection {
+    margin-top: 2rem;
+  }
+
+  .about-cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-card h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.1rem;
+    color: var(--primary-light);
+  }
+
+  .about-card p {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* Section Titles */
+  .section-title-large {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .section-title-large::before {
+    content: ">";
+    color: var(--primary);
+    filter: drop-shadow(0 0 4px var(--primary));
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--border-color);
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 12px var(--primary);
+  }
+
+  .timeline-header {
+    margin-bottom: 1rem;
+  }
+
+  .timeline-date {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  .company-name {
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 1.4rem;
+  }
+
+  .company-role {
+    color: var(--primary-light);
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .callout {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(var(--primary-rgb), 0.1);
+    border-left: 3px solid var(--primary);
+    margin-bottom: 1.5rem;
+  }
+
+  .callout-icon {
+    font-size: 1.5rem;
+  }
+
+  .callout p {
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  .subsection-title {
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    color: var(--primary-light);
+  }
+
+  .subsection-title::before {
+    content: "## ";
+    color: var(--primary);
+  }
+
+  .achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .achievement-item {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+  }
+
+  .achievement-label {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--primary);
+    min-width: 100px;
+    flex-shrink: 0;
+  }
+
+  /* Education */
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .edu-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .edu-date {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+
+  /* Projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .project-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project-icon {
+    font-size: 2rem;
+  }
+
+  .project-title {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .project-role {
+    margin: 0;
+    color: var(--primary-light);
+    font-size: 0.85rem;
+  }
+
+  .project-date {
+    font-family: "Geist Mono", monospace;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .project-desc {
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: auto;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.75rem;
+    background-color: rgba(var(--primary-rgb), 0.15);
+    border: 1px solid var(--primary);
+    color: var(--primary-light);
+    font-family: "Geist Mono", monospace;
+    font-size: 0.8rem;
+    transition: all 0.15s ease;
+  }
+
+  .project-link:hover {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-title {
+      font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+
+    .hero-description {
+      font-size: 0.9rem;
+    }
+
+    .hero-description br {
+      display: none;
+    }
+
+    .education-grid,
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+      padding-left: 1.5rem;
+    }
+
+    .table-container {
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      padding: 0.5rem;
+    }
+
+    .section {
+      padding: 2rem 0;
+    }
+
+    .section-title-large {
+      font-size: 1.5rem;
+    }
+  }
+</style>

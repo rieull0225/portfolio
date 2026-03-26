@@ -1,0 +1,28 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"div"> {}
+
+const { class: className, ...props } = Astro.props;
+---
+
+<div class="card" class:list={[className]} {...props}>
+  <slot />
+</div>
+
+<style>
+  .card {
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    border: 1px solid #353535;
+    padding: 1.5rem;
+    overflow: hidden;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+  }
+
+  .card:hover {
+    border-color: var(--primary);
+    background-color: rgba(140, 92, 245, 0.05);
+  }
+</style>
