@@ -322,21 +322,93 @@ import Card from '../components/Card.astro';
     <h2 class="section-title-large">Projects</h2>
 
     <div class="projects-grid">
+      <!-- NokChart -->
+      <Card class="project-card featured">
+        <div class="project-header">
+          <span class="project-icon">📊</span>
+          <div>
+            <h3 class="project-title">NokChart</h3>
+            <p class="project-role">치지직 채팅 분석 도구</p>
+          </div>
+        </div>
+        <span class="project-date">2024 ~ Present</span>
+
+        <p class="project-desc">
+          치지직 스트림 <strong>채팅 수집, 피크 분석 및 시각화</strong> CLI 도구.
+          WebSocket 자동 재연결, Docker/GCP 배포, 6시간+ 방송 안정 수집.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">asyncio</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GCP</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/rieull0225/chzzk-chat-peak-analyze" target="_blank" class="project-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </Card>
+
+      <!-- Chzzk Karaoke Overlay -->
+      <Card class="project-card">
+        <div class="project-header">
+          <span class="project-icon">🎤</span>
+          <div>
+            <h3 class="project-title">Chzzk Karaoke Overlay</h3>
+            <p class="project-role">OBS 스트리밍 오버레이</p>
+          </div>
+        </div>
+        <span class="project-date">2024 ~ Present</span>
+
+        <p class="project-desc">
+          치지직 스트리머를 위한 <strong>노래방 오버레이</strong>.
+          React + Supabase 실시간 동기화, Vercel 배포.
+        </p>
+
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Zustand</span>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/rieull0225/chzzk-karaoke-overlay" target="_blank" class="project-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </Card>
+
       <!-- HandongApp -->
       <Card class="project-card">
         <div class="project-header">
           <span class="project-icon">📱</span>
           <div>
             <h3 class="project-title">HandongApp</h3>
-            <p class="project-role">Frontend Lead → Project Manager</p>
+            <p class="project-role">Frontend Lead → PM</p>
           </div>
         </div>
-        <span class="project-date">2019.01 ~ 2020.01</span>
+        <span class="project-date">2019 ~ 2020</span>
 
         <p class="project-desc">
-          기존 <strong>ReactNative로 구축된 교내 앱을 Flutter로 전면 마이그레이션</strong>하는 프로젝트를 주도.
-          4명 규모 팀 운영, 코드 리뷰 프로세스 도입, GitLab CI 파이프라인 구축.
+          <strong>ReactNative → Flutter 전면 마이그레이션</strong> 주도.
+          4명 팀 운영, GitLab CI 파이프라인 구축.
         </p>
+
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">GitLab CI</span>
+        </div>
 
         <div class="project-links">
           <a href="https://gitlab.com/hgu-ghost" target="_blank" class="project-link">
@@ -354,14 +426,14 @@ import Card from '../components/Card.astro';
           <span class="project-icon">🚀</span>
           <div>
             <h3 class="project-title">Team OAO</h3>
-            <p class="project-role">Co-founder & Lead Developer</p>
+            <p class="project-role">Co-founder & Lead Dev</p>
           </div>
         </div>
-        <span class="project-date">2019.06 ~ 2020.11</span>
+        <span class="project-date">2019 ~ 2020</span>
 
         <p class="project-desc">
-          '사용자 중심 커스터마이징 플랫폼'을 기획·개발하며 <strong>창업 전 과정</strong> 경험.
-          Flutter MVP 개발 전담, 2020 SW스타트업 챌린지 참가, 투자 피칭.
+          커스터마이징 플랫폼 <strong>창업</strong>.
+          Flutter MVP 개발, SW스타트업 챌린지 참가.
         </p>
 
         <div class="tags">
@@ -377,15 +449,21 @@ import Card from '../components/Card.astro';
           <span class="project-icon">💊</span>
           <div>
             <h3 class="project-title">Pilling</h3>
-            <p class="project-role">졸업 프로젝트 Demo App</p>
+            <p class="project-role">졸업 전시 Demo App</p>
           </div>
         </div>
         <span class="project-date">2020 ~ 2021</span>
 
         <p class="project-desc">
-          모교 디자인학부 졸업 전시용 Demo App 단독 개발.
-          BLoC, GetX, Provider 등 다양한 상태관리 패턴 비교 적용.
+          디자인학부 졸업 전시용 Demo App.
+          BLoC, GetX, Provider 상태관리 패턴 비교.
         </p>
+
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">BLoC</span>
+          <span class="tag">GetX</span>
+        </div>
 
         <div class="project-links">
           <a href="https://github.com/rieull0225/Pilling" target="_blank" class="project-link">
@@ -401,7 +479,7 @@ import Card from '../components/Card.astro';
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2024 박민준. Built with Astro.</p>
+    <p>© 2025 박민준. Built with Astro.</p>
   </footer>
 </Layout>
 
@@ -651,6 +729,11 @@ import Card from '../components/Card.astro';
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .project-card.featured {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.08) 0%, transparent 100%);
   }
 
   .project-header {
